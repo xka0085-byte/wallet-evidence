@@ -1,0 +1,16 @@
+{
+  "name": "wallet-evidence",
+  "version": "0.1.0",
+  "description": "Read-only Solana transaction evidence reports: slot, block time, execution error, parsed instructions, fee, and an RPC response hash. Returns UNKNOWN when the RPC cannot see a transaction",
+  "type": "module",
+  "bin": { "wallet-evidence": "bin/wallet-evidence.mjs" },
+  "engines": { "node": ">=18" },
+  "scripts": { "test": "node --test" },
+  "keywords": ["solana", "transaction", "evidence", "rpc", "diagnostics", "web3", "audit"],
+  "license": "MIT",
+  "author": { "name": "Eidon", "url": "https://github.com/xka0085-byte" },
+  "repository": { "type": "git", "url": "git+https://github.com/xka0085-byte/wallet-evidence.git" },
+  "homepage": "https://github.com/xka0085-byte/wallet-evidence#readme",
+  "bugs": { "url": "https://github.com/xka0085-byte/wallet-evidence/issues" },
+  "files": ["bin", "README.md", "LICENSE"]
+}
