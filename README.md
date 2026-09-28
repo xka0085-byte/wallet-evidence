@@ -33,8 +33,19 @@ Observed in the wild: the same transaction signature can be visible on one publi
 
 Experimental (`0.1.0`). Local JSON-RPC fixture tests pass; real Devnet transaction lookups verified slot/transfer data stability.
 
-## Siblings
+## Agent / Chain Evidence Tools — the suite
 
-[mcpdoctor](https://www.npmjs.com/package/mcpdoctor) · [oauthdoctor](https://www.npmjs.com/package/oauthdoctor) · [x402-reconcile](https://www.npmjs.com/package/x402-reconcile) · [crosschain-incident](https://www.npmjs.com/package/crosschain-incident)
+All tools are read-only, take no keys, and emit JSON.
+
+| Tool | What it checks / proves | Try |
+|---|---|---|
+| [mcpdoctor](https://github.com/xka0085-byte/mcp-doctor) | x402 payment endpoint & MCP server preflight | `npx @eidonze/mcpdoctor` |
+| [oauthdoctor](https://github.com/xka0085-byte/oauthdoctor) | MCP OAuth discovery diagnostics | `npx oauthdoctor` |
+| [x402-reconcile](https://github.com/xka0085-byte/x402-reconcile) | x402 402-challenge inspector | `npx x402-reconcile` |
+| [wallet-evidence](https://github.com/xka0085-byte/wallet-evidence) | Solana transaction evidence reports | `npx wallet-evidence` |
+| [crosschain-incident](https://github.com/xka0085-byte/crosschain-incident) | cross-chain message incident normalization | `npx crosschain-incident` |
+| [ReceiptRail](https://github.com/xka0085-byte/agenttoll) | on-chain x402 delivery receipts (Solana) | [live MCP endpoint](https://agenttoll-receipts.app.workbuddy.host/) |
+
+Live tools page: <https://x402-endpoint-inspection.app.workbuddy.host/tools.html>
 
 MIT © 2026 xka0085-byte (Eidon)
